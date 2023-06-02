@@ -154,15 +154,15 @@ function updatePagination() {
   const pageIndicator = document.querySelector("#page");
   pageIndicator.textContent = `Page ${currentPage} of ${totalPages}`;
   if (currentPage === 1) {
-    prevButton.disabled = true;
+    document.querySelector("#prev").disabled = true;
   } else {
-    prevButton.disabled = false;
+    document.querySelector("#prev").disabled = false;
   }
 
   if (currentPage === totalPages) {
-    nextButton.disabled = true;
+    document.querySelector("#next").disabled = true;
   } else {
-    nextButton.disabled = false;
+    document.querySelector("#next").disabled = false;
   }
 }
 
